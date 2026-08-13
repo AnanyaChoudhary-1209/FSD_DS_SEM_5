@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function assignment</title>
+</head>
+<body>
+    <script>
+        const car = (car_name, car_cost, car_seat) => {
+            document.write("<br> car name : "+car_name);
+            document.write("<br> car cost : "+car_cost);
+            document.write("<br> car seat : "+car_seat);
+        }
+        const aeroplane = (air_name, air_cost, air_seat) => {
+            document.write("<br> aeroplane name : "+air_name);
+            document.write("<br> aeroplane cost : "+air_cost);
+            document.write("<br> aeroplane seat : "+air_seat);
+        }
+        const helicopter = (heli_name, heli_cost, heli_seat) => {
+            document.write("<br> helicopter name : "+heli_name);
+            document.write("<br> helicopter cost : "+heli_cost);
+            document.write("<br> helicopter seat : "+heli_seat);
+        }
+        // document.write("<br> 1. Car");
+        // document.write("<br> 2. Airplane");
+        // document.write("<br> 3. Helicopter");
+        let ch = prompt(" 1. Car  2. Airplane  3. Helicopter  Enter your choice: ");
+        if(ch==1){
+                let carName = prompt("Enter Car Name: ");
+                let carCost = prompt("Enter Car Cost: ");
+                let carSeats = prompt("Enter Car Seats: ");
+                car(carName, carCost, carSeats);
+                
+        }
+        else if(ch==2){
+                let airName = prompt("Enter Airplane Name: ");
+                let airCost = prompt("Enter Airplane Cost: ");
+                let airSeats = prompt("Enter Airplane Seats: ");
+                air(airName, airCost, airSeats);
+                
+        }
+        else if(ch==3){
+                let heliName = prompt("Enter Helicopter Name: ");
+                let heliCost = prompt("Enter Helicopter Cost: ");
+                let heliSeats = prompt("Enter Helicopter Seats: ");
+                heli(heliName, heliCost, heliSeats);
+                
+        }
+        else{
+                document.write("<br> Invalid choice");
+        }
+    </script>
+</body>
+</html>
