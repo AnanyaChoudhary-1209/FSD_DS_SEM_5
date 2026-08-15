@@ -42,6 +42,12 @@
     padding: 10px;
 }
 
+.menu p:hover {
+    color: purple;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 .container * {
     color: rgb(58, 4, 58) !important;
@@ -63,7 +69,6 @@ input {
 
 input:hover {
     border-color: rgb(82, 115, 82);
-    background-color: rgb(172, 145, 145);
 }
 
 button{
@@ -73,5 +78,4 @@ button{
 
 button:hover{
     border-color: rgb(82, 115, 82);
-    background-color: rgb(172, 145, 145);
 }
