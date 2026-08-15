@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style = "text-align: center;">
+
+
+        <div class="menu">
+        <label>--MENU--</label>
+        <p>1. TEA - 450</p>
+        <p>2. COFFEE - 600</p>
+        <p>3. SUGAR - 200</p>
+        <p>4. PULSES - 100</p>
+        <p>5. JAGGERY - 300</p>
+        <p>6. COOKIE - 80</p>
+        <p>7. ALMOND - 450</p>
+        <p>8. CHIPS - 500</p>
+    </div>
+
+    <div class="container">
+        <label>Enter your product:</label>
+    <input type="text" id="product">
+
+    <br><br>
+
+    <label>Enter your quantity:</label>
+    <input type="number" id="quantity">
+
+    <br><br>
+
+    <button onclick="calculate()">Click Me</button>
+
+    <p id="result""></p>
+    </div>
+    
+
+    <script>
+        const itema = {
+            tea: 450,
+            coffee: 600,
+            sugar: 200,
+            pulses: 100,
+            jaggery: 300,
+            cookie: 80,
+            almond: 450,
+            chips: 500
+        };
+        function calculate() {
+            const product = document.getElementById("product").value;
+            const quantity = Number(document.getElementById("quantity").value);
+
+            const total = quantity * itema[product];
+
+            document.getElementById("result").innerHTML =
+                "Your total amount is: " + total;
+        }
+    </script>
+
+</body>
+</html>
