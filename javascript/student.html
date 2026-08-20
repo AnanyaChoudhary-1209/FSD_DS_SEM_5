@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student</title>
+</head>
+<body>
+    <script>
+    const student = 
+        [
+            {
+                name: "Ananya",
+                course: "B.tech",
+                fee: 100000
+            },
+            {
+                name: "Archi",
+                course: "B.tech",
+                fee: 100000
+            },
+            {
+                name: "Khushi",
+                course: "M Tech",
+                fee: 100000
+            },
+            {
+                name: "Sinyora",
+                course: "BCA",
+                fee: 100000
+            },
+            {
+                name: "Mira",
+                course: "MCA",
+                fee: 100000
+            }
+        ]
+        console.log("JavaScript is running!");
+
+        const course = prompt("Enter course:");
+
+        const result = student.filter(
+        student => student.course === course
+        );
+
+        console.log(result);
+
+        const names = filteredStudents.map(
+        student => student.name
+        );
+
+        console.log(names);
+    </script>
+</body>
+</html>
