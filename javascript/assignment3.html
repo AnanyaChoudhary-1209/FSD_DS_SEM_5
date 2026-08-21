@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+
+<body>
+
+<script>
+
+function verify(username, password) {
+
+    if (username === "Ananya" && password === "1234") {
+        return true;
+    }
+
+    return false;
+}
+
+
+function login(clbk, username, password) {
+
+    const result = prompt(clbk(username, password));
+
+    if (result) {
+        console.log("Verified User");
+    }
+    else {
+        console.log("Invalid Username or Password");
+    }
+}
+
+
+login(verify, "Ananya", "1234");
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Callback Hell</title>
+</head>
+<body>
+
+<script>
+
+function first(callback) {
+    console.log("First task");
+    callback();
+}
+
+function second(callback) {
+    console.log("Second task");
+    callback();
+}
+
+function third(callback) {
+    console.log("Third task");
+    callback();
+}
+
+first(function() {
+    second(function() {
+        third(function() {
+            console.log("All tasks completed");
+        });
+    });
+});
+
+</script>
+
+</body>
+</html>
